@@ -1,12 +1,10 @@
 package de.tbuss.shop.cart
 
-import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
+import io.micronaut.runtime.Micronaut
 
-@SpringBootApplication
 class CartApplication
 
 fun main(args: Array<String>) {
-	runApplication<CartApplication>(*args)
+    Micronaut.run(CartApplication::class.java)
 }
 
